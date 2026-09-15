@@ -5,29 +5,10 @@ MathOp calc_square(float a, float *result){
 
     *result = a * a;
 
-    // decltype(a)
-    // if(b == 0){
-    //    return ERROR_OPERATION; // Retorna erro caso o divisor seja 0
-    //}
-
     return SUCESS_OPERATION; // Indica se a operação foi bem sucedida, sem erros
 }
 
-// Determinante da matriz 2x2:
-// MathOp calc_determinant(float m[2][2], float *result){
-//     // // Formato da matriz m 2x2:
-//     // // [0][0]  [0][1]
-//     // // [1][0]  [1][1]
-//     // float principal_diag = m[0][0] * m[1][1];
-//     // float secondary_diag = m[1][0] * m[0][1];
-
-//     // *result = principal_diag - secondary_diag; 
-
-//     return SUCESS_OPERATION; 
-// }
-
 // Determinante da matriz NxN:
-
 MathOp calc_determinant(float m[MAX][MAX], int n, float *result){
     if (n<= 0 || n>MAX) {
         return ERROR_OPERATION;
@@ -77,46 +58,6 @@ MathOp calc_determinant(float m[MAX][MAX], int n, float *result){
     *result = det;
     return SUCESS_OPERATION;
     
-
-    //     if ()
-    //     if (m[i][i] == 0.0f) {
-    //         int c = 0;
-    //         for (j = i + 1; j < n; j++) {
-    //             if (m[j][i] != 0.0f) {
-    //                 // Troca as linhas "i" e "j"
-    //                 for (k = 0; k < n; k++) {
-    //                     float temp = m[i][k];
-    //                     m[i][k] = m[j][k];
-    //                     m[j][k] = temp;
-    //                 }
-    //                 det = -det; // Trocar linhas altera o sinal do determinante
-    //                 c = 1;
-    //                 break;
-    //             }
-    //         }
-
-    //         if (c == 0) {
-    //             *result = 0.0f; // Determinante é nulo se houver uma linha de zeros
-    //             return SUCESS_OPERATION;
-    //         }
-
-    //         // Transformação para matriz triangular superior
-    //         for (j = i + 1; j < n; j++) {
-    //             float factor = m[j][i] / m[i][i];
-    //             for (k = i; k < n; k++) {
-    //                 m[j][k] -= factor * m[i][k];
-    //             }
-    //         }
-    //     }
-    // }
-
-    // // Calcula o determinante com a multiplicação dos termos da diagonal principal
-    // for (i = 0; i < n; i++) {
-    //     det *= m[i][i];
-    // }
-
-    // *result = det;
-    // return SUCESS_OPERATION;
 }
 
 //Soma:

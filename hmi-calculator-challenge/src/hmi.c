@@ -10,7 +10,7 @@ void hmi_run(void) {
         printf("     CALCULADORA - Gabriela Gomes \n");
         printf("----------------------------------------\n\n");
         printf(" 1 - Calcular a potencia de 2 de um numero \n");
-        printf(" 2 - Calcular o determinante da matriz 2x2 \n");
+        printf(" 2 - Calcular o determinante da matriz NxN \n");
         printf(" 3 - Calcular soma de dois numeros \n");
         printf(" 4 - Calcular subtracao de dois numeros \n");
         printf(" 5 - Calcular multiplicacao de dois numeros \n");
@@ -18,7 +18,7 @@ void hmi_run(void) {
         printf(" 7 - Sair \n\n");
         printf(" Digite o numero da operacao desejada: \n");
 
-       scanf("%d", &choice);
+        scanf("%d", &choice);
 
         switch (choice) {
 
@@ -39,9 +39,12 @@ void hmi_run(void) {
 
                         // Verifica se o próximo caractere é um "Enter" ou um espaço
                         if (next_char == '\n' || next_char == ' ') {
-                            if (next_char != '\n') while (getchar() != '\n');
+                            if (next_char != '\n') {
+                                while (getchar() != '\n'){
+                                }
+                            }
                                 input_valido = 1;
-                            } 
+                        } 
                             else {
                                 printf("Erro de digitacao. Voce utilizou virgula ou letras junto ao numero. Por favor, tente novamente \n\n");
                                 while (getchar() != '\n');
@@ -69,7 +72,10 @@ void hmi_run(void) {
                     } else {
                         char next_char = getchar();
                         if (next_char == '\n' || next_char == ' ') {
-                            if (next_char != '\n') while (getchar() != '\n');
+                            if (next_char != '\n') {
+                                while (getchar() != '\n'){
+                                }
+                            }
                                 input_valido = 1;
                         } else {
                             printf("Erro de digitacao. Voce utilizou virgula ou letras junto ao numero. Por favor, tente novamente \n\n");
@@ -79,7 +85,7 @@ void hmi_run(void) {
                 }
 
                 float m[MAX][MAX];
-                printf("Digite os elementos da matriz %dx%d, separados por espaco ou enter:\n", n, n);
+                printf("Digite os elementos da matriz %dx%d, separados por enter:\n", n, n);
 
                 for (int i = 0; i < n; i++) {
                     for (int j = 0; j < n; j++) {
@@ -92,7 +98,10 @@ void hmi_run(void) {
                             } else {
                                 char next_char = getchar();
                                 if (next_char == '\n' || next_char == ' ') {
-                                    if (next_char != '\n') while (getchar() != '\n');
+                                    if (next_char != '\n') {
+                                        while (getchar() != '\n'){
+                                        }
+                                    }
                                         input_valido = 1;
                                 } else {
                                     printf("Erro de digitacao. Voce utilizou virgula ou letras junto ao numero. Por favor, tente novamente \n\n");
@@ -123,7 +132,10 @@ void hmi_run(void) {
                     } else {
                         char next_char = getchar();
                         if (next_char == '\n' || next_char == ' ') {
-                            if (next_char != '\n') while (getchar() != '\n');
+                            if (next_char != '\n') {
+                                while (getchar() != '\n'){
+                                }
+                            }
                                 input_valido = 1;
                         } else {
                             printf("Erro de digitacao. Voce utilizou virgula ou letras junto ao numero. Por favor, tente novamente \n\n");
@@ -152,7 +164,10 @@ void hmi_run(void) {
                     } else {
                         char next_char = getchar();
                         if (next_char == '\n' || next_char == ' ') {
-                            if (next_char != '\n') while (getchar() != '\n');
+                            if (next_char != '\n') {
+                                while (getchar() != '\n'){
+                                }
+                            }
                                 input_valido = 1;
                         } else {
                             printf("Erro de digitacao. Voce utilizou virgula ou letras junto ao numero. Por favor, tente novamente \n\n");
@@ -181,7 +196,10 @@ void hmi_run(void) {
                     } else {
                         char next_char = getchar();
                         if (next_char == '\n' || next_char == ' ') {
-                            if (next_char != '\n') while (getchar() != '\n');
+                            if (next_char != '\n') {
+                                while (getchar() != '\n'){
+                                }
+                            }
                                 input_valido = 1;
                         } else {
                             printf("Erro de digitacao. Voce utilizou virgula ou letras junto ao numero. Por favor, tente novamente \n\n");
@@ -210,7 +228,10 @@ void hmi_run(void) {
                     } else {
                         char next_char = getchar();
                         if (next_char == '\n' || next_char == ' ') {
-                            if (next_char != '\n') while (getchar() != '\n');
+                            if (next_char != '\n') {
+                                while (getchar() != '\n'){
+                                }
+                            }
                                 input_valido = 1;
                         } else {
                             printf("Erro de digitacao. Voce utilizou virgula ou letras junto ao numero. Por favor, tente novamente \n\n");

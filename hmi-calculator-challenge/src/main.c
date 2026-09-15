@@ -1,6 +1,6 @@
 #include "hmi.h"
 
-// Inicia a interface do usuário e mantém o programa ativo até que o usuário decida sair
+// Inicia a interface do usuário (hmi.c) e mantém o programa ativo até que o usuário decida sair
 
 int main(void){
 
