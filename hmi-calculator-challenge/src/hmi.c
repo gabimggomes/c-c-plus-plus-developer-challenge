@@ -52,7 +52,7 @@ void hmi_run(void) {
                     }
                 }
 
-                if (calc_square(a, &res) == SUCESS_OPERATION) {
+                if (calc_square(a, &res) == SUCCESS_OPERATION) {
                     printf("Resultado da potencia: %.2f \n", res);
                 } 
                 break;
@@ -112,7 +112,7 @@ void hmi_run(void) {
                     }
                 }
 
-                if (calc_determinant(m, n, &res) == SUCESS_OPERATION) {
+                if (calc_determinant(m, n, &res) == SUCCESS_OPERATION) {
                     printf("Resultado do Determinante: %.2f \n", res);
                 } 
                 break;
@@ -144,7 +144,7 @@ void hmi_run(void) {
                     }
                 }
 
-                if (calc_sum(a, b, &res) == SUCESS_OPERATION) {
+                if (calc_sum(a, b, &res) == SUCCESS_OPERATION) {
                     printf("Resultado da soma: %.2f \n", res);
                 }
                 break;
@@ -176,7 +176,7 @@ void hmi_run(void) {
                     }
                 }
 
-                if (calc_sub(a, b, &res) == SUCESS_OPERATION) {
+                if (calc_sub(a, b, &res) == SUCCESS_OPERATION) {
                     printf("Resultado da subtracao: %.2f \n", res);
                 } 
                 break;
@@ -208,7 +208,7 @@ void hmi_run(void) {
                     }
                 }
 
-                if (calc_mult(a, b, &res) == SUCESS_OPERATION) {
+                if (calc_mult(a, b, &res) == SUCCESS_OPERATION) {
                     printf("Resultado da multiplicacao: %.2f \n", res);
                 } 
                 break;
@@ -240,7 +240,7 @@ void hmi_run(void) {
                     }
                 }
 
-                if (calc_div(a, b, &res) == SUCESS_OPERATION) {
+                if (calc_div(a, b, &res) == SUCCESS_OPERATION) {
                     printf("Resultado da divisao: %.2f \n", res);
                 } else {
                     printf("Erro: Divisao por zero.\n");

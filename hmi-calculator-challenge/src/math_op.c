@@ -1,11 +1,13 @@
 # include "math_op.h"
+#include <math.h>
+
 
 //Potência de 2:
 MathOp calc_square(float a, float *result){
 
     *result = a * a;
 
-    return SUCESS_OPERATION; // Indica se a operação foi bem sucedida, sem erros
+    return SUCCESS_OPERATION; // Indica se a operação foi bem sucedida, sem erros
 }
 
 // Determinante da matriz NxN:
@@ -28,7 +30,7 @@ MathOp calc_determinant(float m[MAX][MAX], int n, float *result){
 
         if (fabs(m[max_row][i]) < 1e-6) {
             *result = 0.0f; // Determinante é nulo se houver uma linha de zeros
-            return SUCESS_OPERATION;
+            return SUCCESS_OPERATION;
         }
 
         // 3. Se o maior valor nao estiver na linha atual, faz a troca
@@ -56,7 +58,7 @@ MathOp calc_determinant(float m[MAX][MAX], int n, float *result){
     }
 
     *result = det;
-    return SUCESS_OPERATION;
+    return SUCCESS_OPERATION;
     
 }
 
@@ -65,7 +67,7 @@ MathOp calc_sum(float a, float b, float *result){
 
     *result = a + b;
 
-    return SUCESS_OPERATION;
+    return SUCCESS_OPERATION;
 }
 
 //Subtração:
@@ -73,7 +75,7 @@ MathOp calc_sub(float a, float b, float *result){
 
     *result = a - b;
 
-    return SUCESS_OPERATION;
+    return SUCCESS_OPERATION;
 }
 
 //Multiplicação:
@@ -81,7 +83,7 @@ MathOp calc_mult(float a, float b, float *result){
     
     *result = a * b;
 
-    return SUCESS_OPERATION;
+    return SUCCESS_OPERATION;
 }
 
 //Divisão:
@@ -93,5 +95,5 @@ MathOp calc_div(float a, float b, float *result){
 
     *result = a / b;
 
-    return SUCESS_OPERATION;
+    return SUCCESS_OPERATION;
 }   

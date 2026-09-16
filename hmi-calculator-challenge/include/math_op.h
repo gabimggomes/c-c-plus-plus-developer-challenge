@@ -1,10 +1,9 @@
 #ifndef MATH_OPS_H
 #define MATH_OPS_H
 #define MAX 10
-#include <math.h>
 
 typedef enum{
-    SUCESS_OPERATION,
+    SUCCESS_OPERATION,
     ERROR_OPERATION,
 } MathOp;
 
